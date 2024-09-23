@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.parent {
+    background-color: #ddd;
+    height: 200px;
+    width: 200px;
+    margin: 5rem;
+    transition: all ease 400ms;
+    /* animation-name: rotation;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite; */
+}
+
+.parent:hover {
+    transform: translate(100px, 0);
+    transform: rotate(180deg);
+    transform: scale(0.5);
+    transform: skew(-20deg);
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    /* margin-left: 10rem; */
+}
+
+
+@keyframes rotation {
+    0% {
+        transform: translate(-300px,0);
+    }
+    50%{
+        transform: translate(100px,0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
